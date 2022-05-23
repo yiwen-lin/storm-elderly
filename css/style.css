@@ -515,7 +515,7 @@ body {
 /* Color schemes */
 .aoide {
 	--color-text: #fff;
-	--color-bg: #000;
+	--color-bg: #f4c934;
 	--color-link: #fff;
 	--color-link-hover: #5d5050;
 	--color-info: #5d5050;
@@ -786,7 +786,7 @@ main {
 	flex-wrap: wrap;
 	position: relative;
 	padding:0;
-	margin: 16px 0;
+	margin: 18px 0;
 }
 .menu__item:hover,
 .menu__item:focus {
@@ -851,6 +851,7 @@ main {
 	line-height: 1;
 	font-weight: 500;
 	letter-spacing: 4px;
+	text-indent: 4px;
 	z-index: 2;
 	margin: auto;
 	/* color: #b02307; */
@@ -862,6 +863,7 @@ main {
 	font-size: 2vw;
     letter-spacing: 2px;
 	margin-top: 20px;
+	padding-left: 14px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	z-index: 1;
@@ -875,7 +877,7 @@ main {
     margin-left: -10px;
 }
 .hero-text {
-	font-size: 15px;
+	font-size: 17px;
 	text-align: center;
 	letter-spacing:2px
 }
@@ -886,7 +888,7 @@ main {
 	color: #000;
 }
 .hero-main-wrap {
-	color: #000;
+	color: #000;	
 	background-color: rgba(255, 255, 255, 0.7);
 	padding: 24px;
 	margin: 0 30px;
@@ -1594,7 +1596,7 @@ ul.countdown li p {
 }
 .spo-text h5 {
 	display: inline-block;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 17px;
 	letter-spacing:1px;
 	margin-right:20px;
@@ -1603,6 +1605,25 @@ ul.countdown li p {
 
 .carousel-item img{
 	width: 100%;
+}
+
+@media (max-width: 991px) { 
+	.menu__item::before {
+		background: linear-gradient(45deg,#953402,#df5800);
+	}
+	.content__inner5 h5 {
+		text-align: center;
+	}
+	.spo-logo {
+		text-align: center;
+	}
+	.spo-logo img {
+		margin-right: 0;
+		margin-bottom: 16px;
+	}
+	.spo-text h5 {
+		display: block;
+	}
 }
 
 /* #Media
@@ -1634,13 +1655,19 @@ ul.countdown li p {
 	h5, .h5 {
 		font-size: 1.3rem;
 	}
+	.logo img {
+		height: 32px;
+	}
+	.pulse {
+		height: 32px;
+	}
 	.hero-main-title{
 		width: 540px;
-		font-size: 22px;
-		margin-bottom: 30px;
+		margin: 0 auto 14px;
 	}
 	.hero-title{
-		max-width: 330px;
+		/* font-size: 19px; */
+		/* max-width: 330px; */
 	}
 	.hero-subtitle{
 		max-width: 330px;
@@ -1669,8 +1696,9 @@ ul.countdown li p {
 		margin-top: 15px;
 	}
 	.content__close {
-		top: 20px;
-		left: 50%;
+		top: 18px;
+		left: auto;
+		right: 70px;
 		margin-left: -18px;
 		width: 36px;
 		height: 36px;
@@ -1690,34 +1718,58 @@ ul.countdown li p {
 		opacity: 0;
 	}
 	.content__inner {
-		background-color: #111;
+		/* background-color: #111; */
+		background-color: #f4c934;
+	} 
+	.content__inner:nth-child(2),
+	.content__inner:nth-child(4) {
+		background-color: #e44f34;
+	}
+	.content__inner:nth-child(3){
+		background-color: #74d1cf;
 	}
 }
 
 @media (max-width: 991px) { 
-	/* .hero-main-title{
-		display: none;
-	} */
+	.logo {
+		top: 20px;
+		left: 20px;
+	}
+	.ticket {
+		top: 14px;
+    	right: 20px;
+	}
+	.hero-main-wrap {
+		padding:22px 18px;
+	}
+	.hero-main-title{
+		width: 95%;
+	} 
 	.hero-subtitle{
 		font-size: 8vw;
 	}
+	.hero-title {
+		font-size: 18px;
+	}
 	.event-time {
-		top: auto;
-		bottom: 30px;
-		width: 330px;
+		top: 15%;
+		bottom: auto;
+		width: 100%;
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 		transform: translateX(-50%);
 	}
 	.menu {
 		margin: 0 0 0 0;
-		font-size: 4vw;
-		margin-top: -160px;
+		font-size: 4.5vw;
+		font-weight: 400;
+		position: absolute;
+		bottom:6%;
 		align-items: center;
 	}
 	.menu__item {
 		line-height: 1;
-		margin: 10px 0;
+		margin: 12px 0;
 	}
 
 	.menu__item::before {
@@ -1730,12 +1782,14 @@ ul.countdown li p {
 }
 
 @media (max-width: 767px) {
-	.menu {
+	/* .menu {
 		font-size: 6vw;
-	}
-	.menu__item {
+		position: absolute;
+		bottom:30px
+	} */
+	/* .menu__item {
 		margin: 5px 0;
-	}
+	} */
 	.ticket p {
 		display: none;
 	}
@@ -1758,6 +1812,37 @@ ul.countdown li p {
 	}
 }
 
+@media (max-width: 376px) {
+	.event-time {
+		top: 12%;
+	} 
+	.menu {
+		bottom:20px;
+	}
+	.menu__item {
+		margin: 10px 0;
+	}
+	.hero-main-title {
+		width: 90%;
+	}
+	.hero-main-wrap {
+		padding: 16px;
+	}
+	.hero-title {
+		font-size: 17px;
+	}
+	.hero-subtitle {
+		font-size: 6.5vw;
+		line-height: 1;
+	}
+	.hero-text {
+		font-size: 15px;
+	}
+	.hero-text h3 {
+		font-size: 15px;
+		margin-top: 8px;
+	}
+}
 
 
 
