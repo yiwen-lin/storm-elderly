@@ -1563,6 +1563,9 @@ ul.countdown li p {
 	
 /* new
 ================================================== */
+.text-center {
+	text-align: center;
+}
 .text-k {
 	color: #333;
 }
