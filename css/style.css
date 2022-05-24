@@ -1609,6 +1609,9 @@ ul.countdown li p {
 .carousel-item img{
 	width: 100%;
 }
+.host-block img {
+	width: 100%;
+}
 
 @media (max-width: 991px) { 
 	.menu__item::before {
@@ -1626,6 +1629,9 @@ ul.countdown li p {
 	}
 	.spo-text h5 {
 		display: block;
+	}
+	.spo-text {
+		text-align: center;
 	}
 }
 
