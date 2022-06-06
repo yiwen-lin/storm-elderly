@@ -50,35 +50,15 @@
 
 	<!-- adobefont -->
 	<script>
-		(function (d) {
-			var config = {
-					kitId: 'dhh4utq',
-					scriptTimeout: 3000,
-					async: true
-				},
-				h = d.documentElement,
-				t = setTimeout(function () {
-					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-				}, config.scriptTimeout),
-				tk = d.createElement("script"),
-				f = false,
-				s = d.getElementsByTagName("script")[0],
-				a;
-			h.className += " wf-loading";
-			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-			tk.async = true;
-			tk.onload = tk.onreadystatechange = function () {
-				a = this.readyState;
-				if (f || a && a != "complete" && a != "loaded") return;
-				f = true;
-				clearTimeout(t);
-				try {
-					Typekit.load(config)
-				} catch (e) {}
-			};
-			s.parentNode.insertBefore(tk, s)
+		(function(d) {
+		  var config = {
+			kitId: 'bwm2igu',
+			scriptTimeout: 3000,
+			async: true
+		  },
+		  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 		})(document);
-	</script>													
+	  </script>												
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58197782-2"></script>
@@ -150,7 +130,7 @@
 					<div class="section">
 						<div class="hero-main-title"><img src="img/title.svg" alt=""></div>
 						<div class="hero-main-wrap">
-							<div class="hero-title">活躍老化 高齡就業 幸福獨居</div>					
+							<!-- <div class="hero-title">活躍老化 高齡就業 幸福獨居</div>					 -->
 							<div class="hero-subtitle">2022.07.21 <span>（四）</span></div>
 							<div class="hero-text">
 								<p>9:00-10:00 前導記者會</p>
@@ -1022,19 +1002,19 @@
 								<div class="container">
 									<div class="row">			
 										<div class="col-lg-3">
-											<h5 class="text-k mb-2">贊助單位</h5>
+											<h5 class="text-k mb-2">協辦單位</h5>
 										</div>
 										<div class="col-lg-9 mt-4 mt-lg-0 spo-logo">
 											<img src="img/logos/logo-1.png" alt="" class="mb-2">
 											<img src="img/logos/logo-2.png" alt="" class="spo-logo-2 mb-2">
 											<div class="spo-text mt-4">
-												<h5 class="text-k">台東縣老人福利推動聯盟</h5>	
-												<h5 class="text-k">台南市老人福利推動聯盟</h5>	
+												<h5 class="text-k">新北市老人福利聯盟</h5>	
+												<h5 class="text-k">桃園市老人會聯合會</h5>	
+												<h5 class="text-k">嘉義縣老人會總會</h5>	
+												<h5 class="text-k">臺南市老人福利推動聯盟</h5>
 												<h5 class="text-k">宜蘭縣老人福利推動聯盟</h5>	
 												<h5 class="text-k">花蓮縣老人福利推動聯盟</h5>
-												<h5 class="text-k">桃園市老人會聯合會</h5>	
-												<h5 class="text-k">新北市老人福利聯盟</h5>
-												<h5 class="text-k">嘉義縣老人會總會</h5>	
+												<h5 class="text-k">臺東縣老人福利推動聯盟</h5>	
 											</div>
 										</div>
 										
