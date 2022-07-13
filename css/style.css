@@ -53,7 +53,7 @@ body{
 	/* font-family: 'Poppins', sans-serif; */
 	font-family: source-han-sans-cjk-tc, 'Poppins', sans-serif;
 	/* font-family: source-han-serif-tc, serif; */
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.1rem;
 	line-height: 1.75;
 	color: #f1f1f1;
@@ -360,9 +360,11 @@ a.ticket-link:active .pulse{
 	height: 36px;
 	vertical-align: top;
 	margin-right: 10px;
+	transition: .3s;
 }
-.ticket:hover{
-	color: #fff;	
+.ticket p:hover{
+	color: #f4c934;
+	transition: .3s;	
 }
 .ticket svg *{
 	fill: none;
@@ -1592,11 +1594,11 @@ ul.countdown li p {
 }
 .spo-logo img {
 	width: auto;
-	height: 80px;
+	height: 74px;
 	margin-right: 20px;
 }
 .spo-logo img.spo-logo-2 {
-	height: 50px;
+	height: 46px;
 }
 .spo-text h5 {
 	display: inline-block;
@@ -1615,6 +1617,9 @@ ul.countdown li p {
 }
 
 @media (max-width: 991px) { 
+	.spo-text h5 {
+		margin-right: 0;
+	}
 	.menu__item::before {
 		background: linear-gradient(45deg,#953402,#df5800);
 	}
@@ -1626,7 +1631,12 @@ ul.countdown li p {
 	}
 	.spo-logo img {
 		margin-right: 0;
-		margin-bottom: 16px;
+		margin-bottom: 22px;
+		display: block;
+    	margin: auto;
+	}
+	.spo-logo img.spo-logo-2 {
+		/* margin-bottom: 22px; */
 	}
 	.spo-text h5 {
 		display: block;
