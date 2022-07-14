@@ -768,7 +768,7 @@ main {
 	z-index: 4;
 	display: flex;
 	flex-direction: column;
-	margin: 0 40vw 0 0;
+	margin: 0 45vw 0 0;
 	font-size: 2.2vw;
 	padding: 0;
 	/* margin-top: -50px; */
@@ -780,7 +780,7 @@ main {
 	text-transform: lowercase;
 	letter-spacing: -0.025em;
 	text-indent: -0.025em;
-	font-weight: 300;
+	font-weight: 400;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -825,14 +825,14 @@ main {
 	position: absolute;
 	z-index: 2;
 	top: 50%;
-	left: 50%;
+	left: 42%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 .hero-main-title{
 	position: relative;
-	width: 540px;
+	width: 520px;
 	/* max-width: 440px; */
 	display: block;
 	text-align: center;
@@ -1773,6 +1773,7 @@ ul.countdown li p {
 	}
 	.event-time {
 		top: 15%;
+		left: 50%;
 		bottom: auto;
 		width: 100%;
 		-webkit-transform: translateX(-50%);
